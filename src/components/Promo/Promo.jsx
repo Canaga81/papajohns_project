@@ -2,7 +2,7 @@ import React from 'react'
 
 const Promo = () => {
   return (
-    <div className='h-[90px] leading-[90px] bg-promoBg mt-[25px] mr-9 ml-9'>
+    <div className='h-[90px] leading-[90px] bg-promoBg mt-[25px] sm:mr-9 mr-3 sm:ml-9 ml-3'>
         <div className='container mx-auto'>
             <div className='flex items-center justify-center gap-9 px-5'>
                 <h2 className='hidden cr:text-3xl cr:block font-bold'>Promo kodunuz var? <span>Endirimdən istifadə edin!</span> </h2>
