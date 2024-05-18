@@ -14,6 +14,7 @@ import Sous from "./pages/Sous";
 import Sidebar from "./components/Sidebar/Sidebar";
 import Promo from "./components/Promo/Promo";
 import PapaBonus from "./pages/PapaBonus";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
 
@@ -23,10 +24,12 @@ function App() {
 
       <BrowserRouter>
 
+        <ScrollToTop />
+
         <Header />
 
         <Promo />
-        
+
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/kampaniyalar" element={<Kampaniyalar />} />
