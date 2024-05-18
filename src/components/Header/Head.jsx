@@ -2,6 +2,7 @@ import { GrBasket } from "react-icons/gr";
 import { IoRestaurant } from "react-icons/io5";
 import { BsCashCoin } from "react-icons/bs";
 import { FaUser } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Head = () => {
     
@@ -14,10 +15,10 @@ const Head = () => {
                         <h2 className='hidden cr:block font-bold md:text-2xl text-xl'>Restoranlar</h2>
                         <IoRestaurant className="block cr:hidden md:text-2xl text-xl" />
                     </div>
-                    <div>
+                    <Link to={'/papaBonus'}>
                         <h2 className='hidden cr:block font-bold md:text-2xl text-xl'>PapaBonus</h2>
                         <BsCashCoin className="block cr:hidden md:text-2xl text-xl" />
-                    </div>
+                    </Link>
                 </div>
                 <div className='flex items-center gap-5'>
                     <select className='border-none outline-none px-2 font-bold md:text-2xl text-xl'>

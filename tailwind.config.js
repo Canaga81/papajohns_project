@@ -19,6 +19,7 @@ export default {
         navbarBg: '#AD0F14',
         aquaBg: '#0F9675',
         promoBg: '#f1f1f1',
+        btnBgColor: '#0a9876',
       },
     },
   },

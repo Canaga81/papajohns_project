@@ -13,6 +13,7 @@ import Desert from "./pages/Desert";
 import Sous from "./pages/Sous";
 import Sidebar from "./components/Sidebar/Sidebar";
 import Promo from "./components/Promo/Promo";
+import PapaBonus from "./pages/PapaBonus";
 
 function App() {
 
@@ -21,8 +22,11 @@ function App() {
     <>
 
       <BrowserRouter>
+
         <Header />
+
         <Promo />
+        
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/kampaniyalar" element={<Kampaniyalar />} />
@@ -34,9 +38,11 @@ function App() {
           <Route path="/icki" element={<Icki />} />
           <Route path="/desert" element={<Desert />} />
           <Route path="/sous" element={<Sous />} />
+          <Route path="/papaBonus" element={<PapaBonus />} />
         </Routes>
 
         <Sidebar />
+
       </BrowserRouter>
       
     </>
