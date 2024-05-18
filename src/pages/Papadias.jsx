@@ -13,7 +13,7 @@ const Papadias = () => {
 
           {
             loading ? (
-              <div>Loading...</div> // Yükleniyor göstergesi
+              <h1 className='font-extrabold text-3xl'>Loading...</h1>
             ) : (
               items && items?.filter((item) => item.category === "Papadias" )?.map((item) => (
                 <Card key={item.id} name={item.name} image={item.img} composition={item.composition} price={item.price} />
