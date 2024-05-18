@@ -7,7 +7,7 @@ const Card = ( {name, image, composition, price} ) => {
     <div className='w-[100%] max-w-[340px] flex flex-col gap-3'>
 
         <div className='max-w-[340px]'>
-            <img className='w-full' src={image} alt="image_product" />
+            <img className='w-full h-[250px]' src={image} alt="image_product" />
         </div>
         <div className="flex items-start justify-between gap-6">
             <h2 className='text-xl font-bold'>{name}</h2>
