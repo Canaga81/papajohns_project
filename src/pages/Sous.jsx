@@ -7,7 +7,9 @@ const Sous = () => {
   const {items, loading} = useContext(ProductsApiContext);
 
   return (
-    <div className='w-full h-full sm:py-16 py-6 sm:px-6 px-2'>
+
+    <div 
+    className='w-full h-full sm:py-16 py-6 sm:px-6 px-2'>
       <div className='container mx-auto'>
         <div className='flex items-start justify-center gap-5 flex-wrap'>
 
@@ -24,7 +26,9 @@ const Sous = () => {
         </div>
       </div>
     </div>
+
   );
+  
 }
 
 export default Sous;

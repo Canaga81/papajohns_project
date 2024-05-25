@@ -15,12 +15,27 @@ import Sidebar from "./components/Sidebar/Sidebar";
 import Promo from "./components/Promo/Promo";
 import PapaBonus from "./pages/PapaBonus";
 import ScrollToTop from "./components/ScrollToTop";
+import { motion } from "framer-motion";
 
 function App() {
 
   return (
 
-    <>
+    <motion.div
+    initial={{
+      opacity: 0,
+      marginTop: -60,
+      marginLeft: -100,
+    }}
+    animate={{
+      opacity: 1,
+      marginTop: 0,
+      marginLeft: 0,
+    }}
+    transition={{
+      duration: 1.5
+    }}
+    >
 
       <BrowserRouter>
 
@@ -48,7 +63,7 @@ function App() {
 
       </BrowserRouter>
       
-    </>
+    </motion.div>
 
   );
 
